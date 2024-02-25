@@ -107,7 +107,7 @@ export const config = {
     // commands. Instead, they hook themselves up into the test process.
     services: [
         ['monocart', {
-            logging: 'debug',
+            // logging: 'debug',
             name: 'My WebdriverIO Coverage Report',
 
             entryFilter: '**/src/**',
