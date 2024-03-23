@@ -112,7 +112,7 @@ export const config = {
 
             entryFilter: '**/src/**',
 
-            outputDir: 'coverage-reports'
+            outputDir: './coverage-reports'
         }]
     ],
     //

@@ -18,7 +18,8 @@ npm i wdio-monocart-service
     services: [
         ['monocart', {
             name: 'My WebdriverIO Coverage Report',
-            outputDir: 'coverage-reports'
+            entryFilter: '**/src/**',
+            outputDir: './coverage-reports'
         }]
     ]
 }

@@ -22,21 +22,21 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "monocart-coverage-reports": "^2.5.7"
+        "monocart-coverage-reports": "^2.7.6"
     },
     "devDependencies": {
-        "@babel/core": "^7.23.9",
-        "@babel/preset-env": "^7.23.9",
+        "@babel/core": "^7.24.3",
+        "@babel/preset-env": "^7.24.3",
         "@babel/register": "^7.23.7",
         "@vitejs/plugin-react": "^4.2.1",
-        "@wdio/browser-runner": "^8.32.3",
-        "@wdio/cli": "^8.32.3",
-        "@wdio/mocha-framework": "^8.32.3",
-        "@wdio/spec-reporter": "^8.32.2",
+        "@wdio/browser-runner": "^8.35.1",
+        "@wdio/cli": "^8.35.1",
+        "@wdio/mocha-framework": "^8.35.0",
+        "@wdio/spec-reporter": "^8.32.4",
         "eslint": "^8.57.0",
         "eslint-config-plus": "^1.0.6",
         "eslint-plugin-html": "^8.0.0",
-        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react": "^7.34.1",
         "eslint-plugin-wdio": "^8.24.12",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
