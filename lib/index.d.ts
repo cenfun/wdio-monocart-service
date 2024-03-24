@@ -1,5 +1,5 @@
 import type {
-    CoverageReportOptions,
+    CoverageReportOptions as BaseOptions,
     ReportDescription,
     V8CoverageEntry,
     Watermarks,
@@ -12,6 +12,10 @@ import type {
     AddedResults,
     CoverageReport
 } from "monocart-coverage-reports";
+
+interface CoverageReportOptions extends BaseOptions {
+    coverageProvider?: 'v8' | "istanbul";
+}
 
 export type {
     CoverageReportOptions,

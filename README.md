@@ -18,7 +18,13 @@ npm i wdio-monocart-service
     services: [
         ['monocart', {
             name: 'My WebdriverIO Coverage Report',
+            // v8 (default) or istanbul (requires instrumenting source code)
+            // coverageProvider: 'v8',
             entryFilter: '**/src/**',
+            reports: [
+                'v8',
+                'console-details'
+            ],
             outputDir: './coverage-reports'
         }]
     ]

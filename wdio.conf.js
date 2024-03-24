@@ -6,6 +6,10 @@ export const config = {
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: ['browser', {
         preset: 'react',
+        // no need for v8
+        // coverage: {
+        //     enabled: true
+        // },
         // start browser window when `DEBUG` environment variable is set
         headless: !process.env.DEBUG
     }],
@@ -108,10 +112,14 @@ export const config = {
     services: [
         ['monocart', {
             // logging: 'debug',
+            // v8 (default) or istanbul (requires instrumenting source code)
+            // coverageProvider: 'v8',
             name: 'My WebdriverIO Coverage Report',
-
             entryFilter: '**/src/**',
-
+            reports: [
+                'v8',
+                'console-details'
+            ],
             outputDir: './coverage-reports'
         }]
     ],
